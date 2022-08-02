@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A6C1768A2898FEAE00886F74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C176892898FEAE00886F74 /* AppDelegate.swift */; };
 		A6C1768C2898FEAE00886F74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C1768B2898FEAE00886F74 /* SceneDelegate.swift */; };
-		A6C1768E2898FEAE00886F74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C1768D2898FEAE00886F74 /* ViewController.swift */; };
+		A6C1768E2898FEAE00886F74 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C1768D2898FEAE00886F74 /* MainViewController.swift */; };
 		A6C176932898FEB100886F74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C176922898FEB100886F74 /* Assets.xcassets */; };
 		A6C176962898FEB100886F74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6C176942898FEB100886F74 /* LaunchScreen.storyboard */; };
 		A6C1769F2898FF7C00886F74 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = A6C1769E2898FF7C00886F74 /* RxCocoa */; };
@@ -17,16 +17,21 @@
 		A6C176A32898FF7C00886F74 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A6C176A22898FF7C00886F74 /* RxSwift */; };
 		A6C176A62898FFB900886F74 /* Differentiator in Frameworks */ = {isa = PBXBuildFile; productRef = A6C176A52898FFB900886F74 /* Differentiator */; };
 		A6C176A82898FFB900886F74 /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = A6C176A72898FFB900886F74 /* RxDataSources */; };
+		A6C176AB28990E0700886F74 /* Reusable in Frameworks */ = {isa = PBXBuildFile; productRef = A6C176AA28990E0700886F74 /* Reusable */; };
+		A6C176AD2899119F00886F74 /* MainViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C176AC2899119F00886F74 /* MainViewCollectionViewCell.swift */; };
+		A6C176AF28992C7E00886F74 /* MainCollectionReusableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C176AE28992C7E00886F74 /* MainCollectionReusableHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A6C176862898FEAE00886F74 /* RxDataSource_Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxDataSource_Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6C176892898FEAE00886F74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6C1768B2898FEAE00886F74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A6C1768D2898FEAE00886F74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A6C1768D2898FEAE00886F74 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A6C176922898FEB100886F74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6C176952898FEB100886F74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6C176972898FEB100886F74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6C176AC2899119F00886F74 /* MainViewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewCollectionViewCell.swift; sourceTree = "<group>"; };
+		A6C176AE28992C7E00886F74 /* MainCollectionReusableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionReusableHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +44,7 @@
 				A6C176A12898FF7C00886F74 /* RxRelay in Frameworks */,
 				A6C176A82898FFB900886F74 /* RxDataSources in Frameworks */,
 				A6C1769F2898FF7C00886F74 /* RxCocoa in Frameworks */,
+				A6C176AB28990E0700886F74 /* Reusable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +72,9 @@
 			children = (
 				A6C176892898FEAE00886F74 /* AppDelegate.swift */,
 				A6C1768B2898FEAE00886F74 /* SceneDelegate.swift */,
-				A6C1768D2898FEAE00886F74 /* ViewController.swift */,
+				A6C1768D2898FEAE00886F74 /* MainViewController.swift */,
+				A6C176AC2899119F00886F74 /* MainViewCollectionViewCell.swift */,
+				A6C176AE28992C7E00886F74 /* MainCollectionReusableHeaderView.swift */,
 				A6C176922898FEB100886F74 /* Assets.xcassets */,
 				A6C176942898FEB100886F74 /* LaunchScreen.storyboard */,
 				A6C176972898FEB100886F74 /* Info.plist */,
@@ -96,6 +104,7 @@
 				A6C176A22898FF7C00886F74 /* RxSwift */,
 				A6C176A52898FFB900886F74 /* Differentiator */,
 				A6C176A72898FFB900886F74 /* RxDataSources */,
+				A6C176AA28990E0700886F74 /* Reusable */,
 			);
 			productName = RxDataSource_Practice;
 			productReference = A6C176862898FEAE00886F74 /* RxDataSource_Practice.app */;
@@ -128,6 +137,7 @@
 			packageReferences = (
 				A6C1769D2898FF7C00886F74 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				A6C176A42898FFB900886F74 /* XCRemoteSwiftPackageReference "RxDataSources" */,
+				A6C176A928990E0700886F74 /* XCRemoteSwiftPackageReference "Reusable" */,
 			);
 			productRefGroup = A6C176872898FEAE00886F74 /* Products */;
 			projectDirPath = "";
@@ -155,7 +165,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6C1768E2898FEAE00886F74 /* ViewController.swift in Sources */,
+				A6C176AD2899119F00886F74 /* MainViewCollectionViewCell.swift in Sources */,
+				A6C176AF28992C7E00886F74 /* MainCollectionReusableHeaderView.swift in Sources */,
+				A6C1768E2898FEAE00886F74 /* MainViewController.swift in Sources */,
 				A6C1768A2898FEAE00886F74 /* AppDelegate.swift in Sources */,
 				A6C1768C2898FEAE00886F74 /* SceneDelegate.swift in Sources */,
 			);
@@ -383,6 +395,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		A6C176A928990E0700886F74 /* XCRemoteSwiftPackageReference "Reusable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/Reusable.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -410,6 +430,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A6C176A42898FFB900886F74 /* XCRemoteSwiftPackageReference "RxDataSources" */;
 			productName = RxDataSources;
+		};
+		A6C176AA28990E0700886F74 /* Reusable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6C176A928990E0700886F74 /* XCRemoteSwiftPackageReference "Reusable" */;
+			productName = Reusable;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
